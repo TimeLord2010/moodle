@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Starting Moodle with Docker Compose..."
-docker-compose up -d
+docker-compose up -d || exit -1
 
 echo ""
 echo "Waiting for services to initialize..."
